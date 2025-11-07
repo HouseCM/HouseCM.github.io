@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แกลเลอรีรูปภาพ</title>
+<style>
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #f4f7f6;
+color: #333;
+}
+h1 {
+text-align: center;
+color: #2c3e50;
+}
+
+    /* This is the wrapper for each snippet from the CSV */
+    .product-entry {
+        background-color: #ffffff;
+        border: 1px solid #dfe4e8;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin: 20px auto;
+        padding: 24px;
+        max-width: 700px;
+        overflow: hidden;
+    }
+    .product-entry h3 {
+        margin-top: 0;
+        color: #34495e;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 8px;
+    }
+
+    /* Single Image Style */
+    .single-image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Slideshow Container */
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Slides */
+    .mySlides {
+        display: none;
+    }
+    .mySlides img {
+        width: 100%;
+        vertical-align: middle;
+        border-radius: 8px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.3s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+</style>
+
+
+</head>
+<body>
+<h1>แกลเลอรีของฉัน</h1>
+
+<!-- 
+คัดลอก HTML code จากคอลัมน์ B (หรือคอลัมน์ html_code) ในไฟล์ img_output.csv 
+มาวางในนี้ได้เลย
+
+ตัวอย่าง:
+-->
+
+<div class="product-entry">
+    <h3>สินค้าที่ 1 (ตัวอย่าง)</h3>
+    <!-- (วางโค้ด HTML จาก CSV แถวที่ 1 ตรงนี้) -->
+    <div id=""slideshow-1"" class=""slideshow-container"">
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2024/05/mountfield-mtf-98h-petrol-tractor-no-txt.webp"" alt=""Slideshow image from row 1"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232427_0003.jpg"" alt=""Slideshow image from row 1"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232427_0002.jpg"" alt=""Slideshow image from row 1"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232427_0001.jpg"" alt=""Slideshow image from row 1"">
+    </div>
+    <a class=""prev"" onclick=""plusSlides(this, -1)"">&#10094;</a>
+    <a class=""next"" onclick=""plusSlides(this, 1)"">&#10095;</a>
+</div>
+
+</div>
+
+<div class="product-entry">
+    <h3>สินค้าที่ 2 (ตัวอย่าง)</h3>
+    <!-- (วางโค้ด HTML จาก CSV แถวที่ 2 ตรงนี้) -->
+    <div id=""slideshow-2"" class=""slideshow-container"">
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2024/05/mountfield-mtf-84m-no-txt.webp"" alt=""Slideshow image from row 2"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232426_0004.jpg"" alt=""Slideshow image from row 2"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232426_0003.jpg"" alt=""Slideshow image from row 2"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232426_0002.jpg"" alt=""Slideshow image from row 2"">
+    </div>
+    <div class=""mySlides fade"">
+        <img src=""https://lawnmowers-uk.co.uk/wp-content/uploads/2023/12/lmd232426_0001.jpg"" alt=""Slideshow image from row 2"">
+    </div>
+    <a class=""prev"" onclick=""plusSlides(this, -1)"">&#10094;</a>
+    <a class=""next"" onclick=""plusSlides(this, 1)"">&#10095;</a>
+</div>
+
+</div>
+
+
+<!-- 
+=============================================
+ วางโค้ด HTML ของคุณด้านบน SCRIPT นี้
+=============================================
+-->
+<script>
+    // --- Slideshow JavaScript ---
+    
+    // Run this function when the document is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find all slideshow containers
+        let slideshows = document.querySelectorAll(".slideshow-container");
+        
+        // Initialize each slideshow independently
+        slideshows.forEach(container => {
+            // Store the current slide index on the container element itself
+            container.dataset.slideIndex = 1; 
+            showSlides(container, 1); // Show the first slide
+        });
+    });
+
+    // Function to move to the next/previous slide
+    function plusSlides(button, n) {
+        // Find the parent slideshow container of the button that was clicked
+        let container = button.closest(".slideshow-container");
+        // Get the current index, convert to number, and add 'n'
+        let newIndex = parseInt(container.dataset.slideIndex) + n;
+        showSlides(container, newIndex);
+    }
+
+    // Function to display a specific slide 'n' for a given 'container'
+    function showSlides(container, n) {
+        let i;
+        // Get all slides that belong to this specific container
+        let slides = container.querySelectorAll(".mySlides");
+        
+        // Handle wrapping around (if 'n' is past the end or before the beginning)
+        if (n > slides.length) { n = 1; }
+        if (n < 1) { n = slides.length; }
+        
+        // Store the new (or corrected) index
+        container.dataset.slideIndex = n;
+
+        // Hide all slides in this container
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        // Display the correct slide (n-1 because arrays are 0-indexed)
+        if (slides[n - 1]) {
+            slides[n - 1].style.display = "block";
+        }
+    }
+</script>
+
+
+</body>
+</html>
